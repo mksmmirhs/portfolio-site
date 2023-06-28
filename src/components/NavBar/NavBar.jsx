@@ -5,7 +5,10 @@ const NavBar = () => {
         <a href="#home">Home</a>
       </li>
       <li>
-        <a>Item 3</a>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#aboutMe">About Me</a>
       </li>
     </>
   );

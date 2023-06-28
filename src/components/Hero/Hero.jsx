@@ -38,12 +38,9 @@ const Hero = () => {
               {texts[textIndex]}
             </ReactTextTransition>
           </span>
-          developer.
+          web developer.
         </p>
-        <a
-          className="my-4"
-          href="../../../public/Mohammed Merajul Islam cv.pdf"
-        >
+        <a className="my-4" href="Mohammed Merajul Islam cv.pdf">
           <button className="btn bg-green-500">Download Resume</button>
         </a>
       </div>

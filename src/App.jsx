@@ -1,5 +1,6 @@
 import './App.css';
 import Heading from './common/Heading/Heading';
+import AboutMe from './components/AboutMe/AboutMe';
 import Hero from './components/Hero/Hero';
 import NavBar from './components/NavBar/NavBar';
 import Skills from './components/Skills/Skills';
@@ -11,6 +12,8 @@ function App() {
       <Hero></Hero>
       <Heading heading="Skills"></Heading>
       <Skills></Skills>
+      <Heading heading="About Me"></Heading>
+      <AboutMe></AboutMe>
     </div>
   );
 }

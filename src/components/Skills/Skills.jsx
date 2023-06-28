@@ -1,25 +1,55 @@
-import ProgressBar from '@ramonak/react-progress-bar';
+//import ProgressBar from '@ramonak/react-progress-bar';
+import ProgressBar from 'react-animated-progress-bar';
 
 const Skills = () => {
   return (
     <section id="skills" className="my-8 mx-4">
-      <h2 className="text-3xl my-4">HTML:</h2>
-      <ProgressBar completed={90} width="50%" bgColor="#1b9a5a"></ProgressBar>
-
-      <h2 className="text-3xl my-4">CSS:</h2>
-      <ProgressBar completed={80} width="50%" bgColor="#1b9a5a"></ProgressBar>
-      <h2 className="text-3xl my-4">JavaScript:</h2>
-      <ProgressBar completed={90} width="50%" bgColor="#1b9a5a"></ProgressBar>
-      <h2 className="text-3xl my-4">Tailwind CSS:</h2>
-      <ProgressBar completed={70} width="50%" bgColor="#1b9a5a"></ProgressBar>
-      <h2 className="text-3xl my-4">React:</h2>
-      <ProgressBar completed={90} width="50%" bgColor="#1b9a5a"></ProgressBar>
-      <h2 className="text-3xl my-4">Node:</h2>
-      <ProgressBar completed={50} width="50%" bgColor="#1b9a5a"></ProgressBar>
-      <h2 className="text-3xl my-4">Express:</h2>
-      <ProgressBar completed={70} width="50%" bgColor="#1b9a5a"></ProgressBar>
-      <h2 className="text-3xl my-4">MongoDB:</h2>
-      <ProgressBar completed={70} width="50%" bgColor="#1b9a5a"></ProgressBar>
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
+        <div className="flex flex-col items-center">
+          <ProgressBar width="230" trackWidth="13" percentage="90" />
+          <p>HTML</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <ProgressBar width="230" trackWidth="13" percentage="80" />
+          <p>CSS</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <ProgressBar width="230" trackWidth="13" percentage="90" />
+          <p>JavaScript</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <ProgressBar width="230" trackWidth="13" percentage="90" />
+          <p>React.js</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <ProgressBar width="230" trackWidth="13" percentage="50" />
+          <p>Node.js</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <ProgressBar width="230" trackWidth="13" percentage="80" />
+          <p>Express.js</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <ProgressBar width="230" trackWidth="13" percentage="70" />
+          <p>Tailwind CSS</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <ProgressBar width="230" trackWidth="13" percentage="60" />
+          <p>MongoDB</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <ProgressBar width="230" trackWidth="13" percentage="90" />
+          <p>Bootstrap</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <ProgressBar width="230" trackWidth="13" percentage="60" />
+          <p>Firebase</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <ProgressBar width="230" trackWidth="13" percentage="90" />
+          <p>GitHub</p>
+        </div>
+      </div>
     </section>
   );
 };
