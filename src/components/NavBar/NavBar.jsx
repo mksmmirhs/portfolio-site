@@ -2,7 +2,7 @@ const NavBar = () => {
   const menu = (
     <>
       <li>
-        <a>Item 1</a>
+        <a href="#home">Home</a>
       </li>
       <li>
         <a>Item 3</a>
@@ -10,8 +10,8 @@ const NavBar = () => {
     </>
   );
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <div className="sticky top-0 z-30 ">
+      <div className="navbar bg-green-500 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -37,13 +37,12 @@ const NavBar = () => {
               {menu}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Portfolio</a>
+          <a className="btn btn-ghost normal-case text-xl">
+            Mohammed Merajul Islam
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{menu}</ul>
-        </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import heroImg from '../../assets/hero.jpg';
 import { useEffect, useState } from 'react';
 import getRandomInt from '../../utils/randomnumbers';
 
-const texts = ['MERN', 'Full'];
+const texts = ['MERN stack', 'Full stack'];
 
 const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -18,7 +18,7 @@ const Hero = () => {
     };
   }, []);
   return (
-    <div className="sm:grid sm:grid-cols-2 gap-4 m-4">
+    <div id="home" className="sm:grid sm:grid-cols-2 gap-4 m-8">
       <div>
         <img src={heroImg} alt="" />
       </div>
@@ -28,7 +28,7 @@ const Hero = () => {
           Mohammed Merajul Islam
         </p>
         <p className="text-3xl text-center">
-          I am
+          I am a
           <span className="text-green-600">
             <ReactTextTransition
               springConfig={presets.gentle}
@@ -38,8 +38,14 @@ const Hero = () => {
               {texts[textIndex]}
             </ReactTextTransition>
           </span>
-          stack developer.
+          developer.
         </p>
+        <a
+          className="my-4"
+          href="../../../public/Mohammed Merajul Islam cv.pdf"
+        >
+          <button className="btn bg-green-500">Download Resume</button>
+        </a>
       </div>
     </div>
   );
