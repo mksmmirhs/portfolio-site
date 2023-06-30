@@ -1,10 +1,10 @@
 import { Slide } from 'react-awesome-reveal';
 
-const Heading = ({ heading }) => {
+const Heading = ({ heading, id }) => {
   return (
-    <div>
+    <div id={id} className="flex justify-center">
       <Slide>
-        <h2 className="border-b-2 border-green-500 text-5xl my-8 mx-auto text-center py-4 w-1/4">
+        <h2 className="border-b-2 border-green-500 text-4xl my-8 mx-auto py-4 ">
           {heading}
         </h2>
       </Slide>

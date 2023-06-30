@@ -10,6 +10,9 @@ const NavBar = () => {
       <li>
         <a href="#aboutMe">About Me</a>
       </li>
+      <li>
+        <a href="#portfolio">Portfolio</a>
+      </li>
     </>
   );
   return (

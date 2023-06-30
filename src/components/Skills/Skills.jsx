@@ -3,7 +3,7 @@ import ProgressBar from 'react-animated-progress-bar';
 
 const Skills = () => {
   return (
-    <section id="skills" className="my-8 mx-4">
+    <section className="my-8 mx-4">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
         <div className="flex flex-col items-center">
           <ProgressBar width="230" trackWidth="13" percentage="90" />

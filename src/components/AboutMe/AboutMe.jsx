@@ -1,11 +1,16 @@
 import img from '../../assets/about.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init();
+import { useEffect } from 'react';
+
 const AboutMe = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <section id="aboutMe" className="grid sm:grid-cols-2 gap-4 my-4 mx-4">
-      <div>
+    <section className="grid sm:grid-cols-2 gap-4 my-4 mx-4">
+      <div data-aos="flip-left">
         <p className="py-2">
           Hello! My name is Mohammed Merajul Islam, and I am a passionate MERN
           stack developer. With a solid foundation in electrical and electronics
@@ -46,7 +51,7 @@ const AboutMe = () => {
           remarkable digital experiences together.
         </p>
       </div>
-      <div>
+      <div data-aos="flip-right">
         <img src={img} alt="" className="sm:h-[600px]" />
       </div>
     </section>
