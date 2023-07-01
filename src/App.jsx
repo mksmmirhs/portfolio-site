@@ -1,6 +1,7 @@
 import './App.css';
 import Heading from './common/Heading/Heading';
 import AboutMe from './components/AboutMe/AboutMe';
+import ContactForm from './components/ContactForm/ContactForm';
 import Hero from './components/Hero/Hero';
 import NavBar from './components/NavBar/NavBar';
 import Portfolio from './components/Portfolio/Portfolio';
@@ -17,6 +18,8 @@ function App() {
       <AboutMe></AboutMe>
       <Heading id="portfolio" heading="Portfolio"></Heading>
       <Portfolio></Portfolio>
+      <Heading id="contactMe" heading="Contact Me"></Heading>
+      <ContactForm></ContactForm>
     </div>
   );
 }
