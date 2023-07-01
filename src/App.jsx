@@ -2,6 +2,7 @@ import './App.css';
 import Heading from './common/Heading/Heading';
 import AboutMe from './components/AboutMe/AboutMe';
 import ContactForm from './components/ContactForm/ContactForm';
+import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import NavBar from './components/NavBar/NavBar';
 import Portfolio from './components/Portfolio/Portfolio';
@@ -20,6 +21,7 @@ function App() {
       <Portfolio></Portfolio>
       <Heading id="contactMe" heading="Contact Me"></Heading>
       <ContactForm></ContactForm>
+      <Footer></Footer>
     </div>
   );
 }
