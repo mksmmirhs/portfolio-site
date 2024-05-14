@@ -1,9 +1,9 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
-import musicSchool from '../../assets/Melody Music School.png';
-import toy from '../../assets/toy.png';
-import chefs from '../../assets/chefs.png';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import musicSchool from "../../assets/Melody Music School.png";
+import toy from "../../assets/toy.png";
+import chefs from "../../assets/chefs.png";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -30,13 +30,19 @@ const Portfolio = () => {
             </p>
             <div className="card-actions">
               <a href="https://music-school-a61d8.web.app/">
-                <button className="btn bg-green-500">Live link</button>
+                <button className="btn bg-green-500 text-black">
+                  Live link
+                </button>
               </a>
               <a href="https://github.com/mksmmirhs/melody-music-school-client">
-                <button className="btn bg-green-500">Client code </button>
+                <button className="btn bg-green-500 text-black">
+                  Client code{" "}
+                </button>
               </a>
               <a href="https://github.com/mksmmirhs/melody-music-school-server">
-                <button className="btn bg-green-500">Server code</button>
+                <button className="btn bg-green-500 text-black">
+                  Server code
+                </button>
               </a>
             </div>
           </div>
@@ -57,13 +63,19 @@ const Portfolio = () => {
             </p>
             <div className="card-actions">
               <a href="https://toy-store-c5606.web.app/">
-                <button className="btn bg-green-500">Live link</button>
+                <button className="btn bg-green-500 text-black">
+                  Live link
+                </button>
               </a>
               <a href="https://github.com/mksmmirhs/toy-hub-client">
-                <button className="btn bg-green-500">Client code </button>
+                <button className="btn bg-green-500 text-black">
+                  Client code{" "}
+                </button>
               </a>
               <a href="https://github.com/mksmmirhs/toy-hub-server">
-                <button className="btn bg-green-500">Server code</button>
+                <button className="btn bg-green-500 text-black">
+                  Server code
+                </button>
               </a>
             </div>
           </div>
@@ -86,13 +98,19 @@ const Portfolio = () => {
             </p>
             <div className="card-actions">
               <a href="https://korean-cheaf.web.app/">
-                <button className="btn bg-green-500">Live link</button>
+                <button className="btn bg-green-500 text-black">
+                  Live link
+                </button>
               </a>
               <a href="https://github.com/mksmmirhs/master-chef-client">
-                <button className="btn bg-green-500">Client code </button>
+                <button className="btn bg-green-500 text-black">
+                  Client code{" "}
+                </button>
               </a>
               <a href="https://github.com/mksmmirhs/master-chef-server">
-                <button className="btn bg-green-500">Server code</button>
+                <button className="btn bg-green-500 text-black">
+                  Server code
+                </button>
               </a>
             </div>
           </div>

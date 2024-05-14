@@ -1,11 +1,11 @@
-import ReactTextTransition, { presets } from 'react-text-transition';
-import heroImg from '../../assets/hero.jpg';
-import { useEffect, useState } from 'react';
-import getRandomInt from '../../utils/randomnumbers';
-import { SocialIcon } from 'react-social-icons';
-import { TypeAnimation } from 'react-type-animation';
+import ReactTextTransition, { presets } from "react-text-transition";
+import heroImg from "../../assets/hero.jpg";
+import { useEffect, useState } from "react";
+import getRandomInt from "../../utils/randomnumbers";
+import { SocialIcon } from "react-social-icons";
+import { TypeAnimation } from "react-type-animation";
 
-const texts = ['MERN stack', 'Full stack'];
+const texts = ["MERN stack", "Full stack"];
 
 const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
@@ -25,33 +25,39 @@ const Hero = () => {
         <img src={heroImg} alt="" />
       </div>
       <div className="flex flex-col items-center justify-center">
-        <p className="text-5xl text-center">
+        <p className=" text-2xl md:text-5xl text-center">
           Hi! I am <br />
           Mohammed Merajul Islam
         </p>
-        <p className="text-2xl text-center my-4 text-green-500">
+        <p className=" text-sm md:text-2xl text-center my-4 text-green-500">
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
-              'I am a web developer.',
+              "I am a web developer.",
               2500,
-              'I am a MERN stack developer.',
+              "I am a MERN stack developer.",
               2500,
             ]}
             wrapper="span"
             speed={30}
-            style={{ display: 'inline-block' }}
+            style={{ display: "inline-block" }}
             repeat={Infinity}
           />
         </p>
         <div>
-          <SocialIcon url="https://www.linkedin.com/in/mksmmirhs/"></SocialIcon>
+          <SocialIcon url="https://www.linkedin.com/in/merajul-islam1/"></SocialIcon>
           <span className="ml-4">
             <SocialIcon url="https://github.com/mksmmirhs"></SocialIcon>
           </span>
         </div>
-        <a className="my-4" href="Mohammed Merajul Islam cv.pdf">
-          <button className="btn bg-green-500">Download Resume</button>
+        <a
+          download={true}
+          className="my-4"
+          href="Mohammed Merajul Islam cv.pdf"
+        >
+          <button className="btn bg-green-500 text-black">
+            Download Resume
+          </button>
         </a>
       </div>
     </div>

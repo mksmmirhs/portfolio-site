@@ -19,12 +19,12 @@ const AboutMe = () => {
         </p>
         <p className="py-2">
           During my journey, I honed my skills through the comprehensive web
-          development course offered by Programming Hero. This immersive program
-          provided me with a deep understanding of essential technologies such
-          as HTML, CSS, and JavaScript, enabling me to craft captivating and
-          interactive web experiences. Additionally, I have hands-on experience
-          working with Firebase, leveraging its powerful features to create
-          robust backends and real-time applications.
+          development course offered by "Programming Hero". This immersive
+          program provided me with a deep understanding of essential
+          technologies such as HTML, CSS, and JavaScript, enabling me to craft
+          captivating and interactive web experiences. Additionally, I have
+          hands-on experience working with Firebase, leveraging its powerful
+          features to create robust backends and real-time applications.
         </p>
         <p className="py-2">
           Constantly driven by a desire to learn and grow, I stay up-to-date
